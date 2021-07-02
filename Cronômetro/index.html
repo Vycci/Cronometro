@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <title>Cronômetro</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="main-window" class="center">
+
+            <div id="buttons" class="center">
+                <button id="btn1" class="btn">Start</button>
+                <button id="btn2" class="btn">Pause</button>
+                <button id="btn3" class="btn">Stop</button> 
+            </div>
+    
+            <div id="timer" class="center">
+                <span id="time">00:00:00</span>
+            </div>
+
+            <!--previous timers-->
+            <div id="ptimers" class="center">             
+                <ul id="ptimer-list">
+                    
+                </ul>
+            </div>
+
+            <div class="center">
+                <button class="btn" id="reset-btn">
+                    Apagar placar
+                </button>
+            </div>
+    
+        </div>
+    
+        <footer>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous">
+            </script>
+            <script src="script.js"></script>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
